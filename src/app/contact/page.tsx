@@ -35,11 +35,11 @@ export default function ContactPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Contact Us</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+      <section className="relative py-8 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-4">Contact Us</h1>
+            <p className="mt-0 text-lg leading-8 text-gray-600 mb-4">
               Ready to transform your space? Let's discuss your project and bring your vision to life.
             </p>
           </div>
@@ -47,9 +47,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             {/* Contact Information */}
             <div className="lg:col-span-1">
               <div className="space-y-8">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <div className="rounded-full bg-primary/10 p-3">
                       <MapPin className="h-6 w-6 text-primary" />
@@ -120,7 +120,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                           Full Name *
@@ -151,7 +151,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                           Phone Number

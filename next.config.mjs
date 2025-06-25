@@ -7,7 +7,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['placeholder.svg'],
+    domains: ['placeholder.svg', 'openai.com', 'dgicommunications.com', 'auramodernhome.com', 'architecturaldigest.com', 'decorilla.com'],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

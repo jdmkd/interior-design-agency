@@ -16,37 +16,37 @@ const services = [
     icon: Building,
     title: "Commercial Spaces",
     description: "Create inspiring work environments that boost productivity and reflect your brand identity.",
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=400&q=80",
     slug: "commercial-spaces",
   },
   {
     icon: Palette,
     title: "Space Planning",
     description: "Optimize your space layout for maximum functionality and aesthetic appeal.",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+    image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80",
     slug: "space-planning",
   },
   {
     icon: Lightbulb,
     title: "Lighting Design",
     description: "Illuminate your space with carefully planned lighting solutions that enhance ambiance.",
-    image: "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80",
+    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80",
     slug: "lighting-design",
   },
 ]
 
 export default function ServicesPreview() {
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</h2>
-          <p className="mt-4 text-lg text-gray-600">
+    <section className="py-12 bg-white">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mx-auto max-w-2xl text-center mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Our Services</h2>
+          <p className="mt-0 text-lg text-gray-600 mb-6">
             Comprehensive design solutions tailored to your unique needs and vision
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-0">
@@ -81,7 +81,7 @@ export default function ServicesPreview() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Button size="lg" asChild>
             <Link href="/services">
               View All Services

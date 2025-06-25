@@ -8,20 +8,20 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react"
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
     title: "Transform Your Space Into Something Extraordinary",
     subtitle: "Award-winning interior design and architecture services",
     description: "We create beautiful, functional spaces that reflect your personality and enhance your lifestyle.",
   },
   {
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
     title: "Luxury Interior Design Solutions",
     subtitle: "From concept to completion",
     description:
       "Our expert team brings your vision to life with innovative design and meticulous attention to detail.",
   },
   {
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=1200&q=80",
     title: "Architectural Excellence",
     subtitle: "Building dreams, creating legacies",
     description: "Comprehensive architectural services that blend form and function for timeless appeal.",
@@ -47,7 +47,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[70vh] min-h-[400px] overflow-hidden py-12">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -67,13 +67,13 @@ export default function Hero() {
       ))}
 
       <div className="relative z-10 flex h-full items-center">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 lg:px-6">
           <div className="max-w-2xl">
             <p className="text-lg font-medium text-white/90 mb-4">{slides[currentSlide].subtitle}</p>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-4">
               {slides[currentSlide].title}
             </h1>
-            <p className="text-xl text-white/90 mb-8">{slides[currentSlide].description}</p>
+            <p className="text-xl text-white/90 mb-6">{slides[currentSlide].description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
                 <Link href="/projects">View Our Work</Link>

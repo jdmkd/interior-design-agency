@@ -114,19 +114,19 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* Project Details */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
-              <p className="text-lg text-gray-600 mb-8">{project.description}</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Project Overview</h2>
+              <p className="text-lg text-gray-600 mb-4">{project.description}</p>
 
-              <div className="mb-8">
+              <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">The Challenge</h3>
                 <p className="text-gray-600">{project.challenge}</p>
               </div>
 
-              <div className="mb-8">
+              <div className="mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Our Solution</h3>
                 <p className="text-gray-600">{project.solution}</p>
               </div>
@@ -180,14 +180,13 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* Gallery */}
-      <section className="py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Project Gallery</h2>
-            <p className="mt-4 text-lg text-gray-600">Explore the details and craftsmanship of this project</p>
+      <section className="py-8 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Project Gallery</h2>
+            <p className="mt-0 text-lg text-gray-600 mb-4">Explore the details and craftsmanship of this project</p>
           </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {project.gallery.map((image, index) => (
               <div key={index} className="relative overflow-hidden rounded-lg group">
                 <Image
@@ -204,14 +203,12 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="bg-primary py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Inspired by This Project?</h2>
-            <p className="mt-4 text-lg text-white/90">
-              Let's create something extraordinary for your space. Contact us to discuss your project.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Inspired by This Project?</h2>
+            <p className="mt-0 text-lg text-white/90 mb-4">Let's create something extraordinary for your space. Contact us to discuss your project.</p>
+            <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">
                   Start Your Project

@@ -4,64 +4,59 @@ import Image from "next/image"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Homeowner",
-    image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=80&h=80&q=80",
+    name: "Priya Sharma",
+    role: "Homeowner, Mumbai",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
     content:
-      "Luxe Design transformed our home beyond our wildest dreams. Their attention to detail and creative vision is unmatched.",
+      "Luxe Design transformed our flat into a beautiful, functional home. Their attention to detail and understanding of Indian aesthetics is outstanding.",
     rating: 5,
   },
   {
-    name: "Michael Chen",
-    role: "CEO, Tech Startup",
-    image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=80&h=80&q=80",
+    name: "Rahul Mehta",
+    role: "Founder, Mehta Tech Solutions",
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
     content:
-      "The team created an inspiring workspace that perfectly reflects our company culture. Our productivity has increased significantly.",
+      "Our new office space is both inspiring and practical. The team delivered on time and exceeded our expectations.",
     rating: 5,
   },
   {
-    name: "Emily Rodriguez",
-    role: "Restaurant Owner",
-    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=80&h=80&q=80",
+    name: "Anjali Patel",
+    role: "Restaurant Owner, Ahmedabad",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
     content:
-      "They designed a space that not only looks stunning but also enhances the dining experience for our customers.",
+      "The ambiance they created for our restaurant has received so many compliments from our guests. Highly recommended!",
     rating: 5,
   },
 ]
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What Our Clients Say</h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Don't just take our word for it - hear from our satisfied clients
-          </p>
+    <section className="py-12 bg-white">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mx-auto max-w-2xl text-center mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">What Our Clients Say</h2>
+          <p className="mt-0 text-lg text-gray-600 mb-6">Don't just take our word for it – hear from our satisfied clients</p>
         </div>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="p-8">
-                <div className="flex justify-center mb-4">
+            <Card key={index} className="text-center shadow-lg border-0">
+              <CardContent className="flex flex-col items-center p-8">
+                <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-6 italic">"{testimonial.content}"</p>
-                <div className="flex items-center justify-center gap-3">
+                <p className="text-gray-600 mb-6 italic max-w-xs">"{testimonial.content}"</p>
+                <div className="flex flex-col items-center gap-2">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
-                    width={80}
-                    height={80}
-                    className="h-12 w-12 rounded-full object-cover"
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 rounded-full object-cover border-4 border-primary shadow"
                   />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
-                  </div>
+                  <div className="font-semibold text-gray-900 mt-2">{testimonial.name}</div>
+                  <div className="text-sm text-gray-500">{testimonial.role}</div>
                 </div>
               </CardContent>
             </Card>

@@ -83,7 +83,7 @@ export default function ProjectsPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-50">
+      <section className="relative py-8 bg-gray-50 mb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Projects</h1>
@@ -96,8 +96,8 @@ export default function ProjectsPage() {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-12 border-b">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="py-8 border-b mt-0">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="flex justify-center">
             <div className="flex space-x-1 rounded-xl bg-white border border-gray-200 p-1 shadow-sm relative">
               {categories.map((category) => (
@@ -125,9 +125,9 @@ export default function ProjectsPage() {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {filteredProjects.map((project, index) => (
               <Card key={index} className="group hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
@@ -179,14 +179,12 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="bg-primary py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to Start Your Project?</h2>
-            <p className="mt-4 text-lg text-white/90">
-              Let's create something extraordinary together. Contact us for a free consultation.
-            </p>
-            <div className="mt-8">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Ready to Start Your Project?</h2>
+            <p className="mt-0 text-lg text-white/90 mb-4">Let's create something extraordinary together. Contact us for a free consultation.</p>
+            <div className="mt-4">
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">
                   Get Started Today

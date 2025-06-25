@@ -11,7 +11,7 @@ const projects = [
     category: "Residential",
     location: "Beverly Hills, CA",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80",
     description: "A stunning contemporary villa featuring clean lines, natural materials, and panoramic city views.",
     slug: "modern-luxury-villa",
   },
@@ -20,7 +20,7 @@ const projects = [
     category: "Commercial",
     location: "Downtown LA",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a5a?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80",
     description: "Innovative office design promoting collaboration and creativity in a Fortune 500 company.",
     slug: "corporate-headquarters",
   },
@@ -29,7 +29,7 @@ const projects = [
     category: "Hospitality",
     location: "Santa Monica, CA",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
     description: "Complete transformation of a historic building into a luxury boutique hotel.",
     slug: "boutique-hotel-renovation",
   },
@@ -37,14 +37,14 @@ const projects = [
 
 export default function ProjectsPreview() {
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Featured Projects</h2>
-          <p className="mt-4 text-lg text-gray-600">Discover our latest work and see how we bring visions to life</p>
+    <section className="py-12 bg-gray-50">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mx-auto max-w-2xl text-center mb-6">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Featured Projects</h2>
+          <p className="mt-0 text-lg text-gray-600 mb-6">Discover our latest work and see how we bring visions to life</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Card key={index} className="group hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-0">
@@ -87,7 +87,7 @@ export default function ProjectsPreview() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Button size="lg" asChild>
             <Link href="/projects">
               View All Projects

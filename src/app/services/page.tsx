@@ -11,7 +11,7 @@ const services = [
     description:
       "Transform your home into a personalized sanctuary with our comprehensive residential interior design services.",
     features: ["Space Planning", "Color Consultation", "Furniture Selection", "Custom Millwork"],
-    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
     slug: "residential-design",
   },
   {
@@ -19,7 +19,7 @@ const services = [
     title: "Commercial Spaces",
     description: "Create inspiring work environments that boost productivity and reflect your brand identity.",
     features: ["Office Design", "Retail Spaces", "Restaurant Design", "Healthcare Facilities"],
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
+    image: "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/modern-office-design-for-a-large-conference-room.jpeg?auto=format&fit=crop&w=800&q=80",
     slug: "commercial-spaces",
   },
   {
@@ -27,7 +27,7 @@ const services = [
     title: "Space Planning",
     description: "Optimize your space layout for maximum functionality and aesthetic appeal.",
     features: ["Layout Design", "Traffic Flow", "Furniture Arrangement", "3D Visualization"],
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+    image: "https://arktura.com/wp-content/uploads/2017/01/Arktura-SoundAngle-Confidential_WEB_1-1600x1078.jpg?auto=format&fit=crop&w=800&q=80",
     slug: "space-planning",
   },
   {
@@ -35,7 +35,7 @@ const services = [
     title: "Lighting Design",
     description: "Illuminate your space with carefully planned lighting solutions that enhance ambiance.",
     features: ["Ambient Lighting", "Task Lighting", "Accent Lighting", "Smart Controls"],
-    image: "https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=600&q=80",
+    image: "https://interiordesign.net/wp-content/uploads/2023/06/Interior-Design-Zikzak-Architects-idx230601_wtroundup03b.jpg?auto=format&fit=crop&w=800&q=80",
     slug: "lighting-design",
   },
   {
@@ -43,7 +43,7 @@ const services = [
     title: "Architectural Services",
     description: "Complete architectural solutions from concept to construction documentation.",
     features: ["Design Development", "Construction Drawings", "Permit Processing", "Construction Admin"],
-    image: "https://images.unsplash.com/photo-1503389152951-9c3d0c6b7a5a?auto=format&fit=crop&w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1661962952618-031d218dd040?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y296eSUyMGFwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0?auto=format&fit=crop&w=800&q=80",
     slug: "architectural-services",
   },
   {
@@ -51,7 +51,7 @@ const services = [
     title: "Furniture & Decor",
     description: "Curated furniture selection and custom pieces to complete your space.",
     features: ["Custom Furniture", "Art Curation", "Textile Selection", "Accessory Styling"],
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=80",
+    image: "https://www.dgicommunications.com/wp-content/uploads/2022/02/dgi-commercial-office-design.jpg?auto=format&fit=crop&w=800&q=80",
     slug: "furniture-decor",
   },
   {
@@ -59,7 +59,7 @@ const services = [
     title: "Sustainable Design",
     description: "Eco-friendly design solutions that are beautiful and environmentally responsible.",
     features: ["Green Materials", "Energy Efficiency", "Indoor Air Quality", "LEED Certification"],
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80",
+    image: "https://auramodernhome.com/cdn/shop/articles/img-1707349210324.jpg?v=1707349267&width=1100?auto=format&fit=crop&w=800&q=80",
     slug: "sustainable-design",
   },
   {
@@ -67,31 +67,30 @@ const services = [
     title: "Renovation & Remodeling",
     description: "Complete renovation services to transform existing spaces into your dream environment.",
     features: ["Kitchen Remodeling", "Bathroom Renovation", "Whole House Remodel", "Historic Restoration"],
-    image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+    image: "https://s3.mortarr.com/images/project_gallery_images/modernus-lama-glass-system-office-space-design-3.jpeg?auto=format&fit=crop&w=800&q=80",
     slug: "renovation-remodeling",
   },
-]
+];
 
 export default function ServicesPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Our Services</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Comprehensive design solutions tailored to your unique needs and vision. From concept to completion, we
-              bring your dreams to life.
+      <section className="relative py-8 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-4">Our Services</h1>
+            <p className="mt-0 text-lg leading-8 text-gray-600 mb-4">
+              Comprehensive design solutions tailored to your unique needs and vision. From concept to completion, we bring your dreams to life.
             </p>
           </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-8 gap-y-8 lg:grid-cols-2">
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-0">
@@ -138,14 +137,12 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="bg-primary py-12">
+        <div className="mx-auto max-w-7xl px-4 lg:px-6">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Ready to Get Started?</h2>
-            <p className="mt-4 text-lg text-white/90">
-              Let's discuss your project and create something extraordinary together.
-            </p>
-            <div className="mt-8">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Ready to Get Started?</h2>
+            <p className="mt-0 text-lg text-white/90 mb-6">Let's discuss your project and create something extraordinary together.</p>
+            <div className="mt-6">
               <Button size="lg" variant="secondary" asChild>
                 <Link href="/contact">
                   Get Free Consultation

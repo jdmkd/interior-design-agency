@@ -102,12 +102,12 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
       </section>
 
       {/* Service Overview */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
-            <p className="text-lg leading-8 text-gray-600 mb-8">{service.description}</p>
+            <p className="text-lg leading-8 text-gray-600 mb-4">{service.description}</p>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mb-12">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 mb-4">
               <div className="text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   <Clock className="h-8 w-8 text-primary" />

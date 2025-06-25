@@ -57,37 +57,32 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">About Luxe Design</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We are passionate designers and architects dedicated to creating extraordinary spaces that inspire and
-              delight.
+      <section className="relative py-8 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-4">About Luxe Design</h1>
+            <p className="mt-0 text-lg leading-8 text-gray-600 mb-4">
+              We are passionate designers and architects dedicated to creating extraordinary spaces that inspire and delight.
             </p>
           </div>
         </div>
       </section>
 
       {/* Story Section */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-4 gap-y-4 sm:gap-y-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-primary">Our Story</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h2 className="text-base font-semibold leading-7 text-primary mb-4">Our Story</h2>
+                <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
                   15 Years of Design Excellence
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Founded in 2009, Luxe Design Studio has grown from a small boutique firm to one of the most respected
-                  interior design and architecture companies in California. Our journey began with a simple mission: to
-                  create beautiful, functional spaces that enhance people's lives.
+                <p className="text-lg leading-8 text-gray-600 mb-4">
+                  Founded in 2009, Luxe Design Studio has grown from a small boutique firm to one of the most respected interior design and architecture companies in California. Our journey began with a simple mission: to create beautiful, functional spaces that enhance people's lives.
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Today, we've completed over 1,200 projects, won 25+ industry awards, and built lasting relationships
-                  with clients who trust us to bring their visions to life. Our success is built on a foundation of
-                  creativity, craftsmanship, and unwavering commitment to excellence.
+                <p className="text-lg leading-8 text-gray-600 mb-0">
+                  Today, we've completed over 1,200 projects, won 25+ industry awards, and built lasting relationships with clients who trust us to bring their visions to life. Our success is built on a foundation of creativity, craftsmanship, and unwavering commitment to excellence.
                 </p>
               </div>
             </div>
@@ -106,17 +101,16 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Values</h2>
-            <p className="mt-4 text-lg text-gray-600">The principles that guide everything we do</p>
+      <section className="py-8 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Our Values</h2>
+            <p className="mt-0 text-lg text-gray-600 mb-4">The principles that guide everything we do</p>
           </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
               <Card key={index} className="text-center">
-                <CardContent className="p-8">
+                <CardContent className="p-6">
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                     <value.icon className="h-8 w-8 text-primary" />
                   </div>
@@ -130,19 +124,16 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet Our Team</h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Talented professionals passionate about creating exceptional spaces
-            </p>
+      <section id="team" className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-2xl text-center mb-4">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">Meet Our Team</h2>
+            <p className="mt-0 text-lg text-gray-600 mb-4">Talented professionals passionate about creating exceptional spaces</p>
           </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             {team.map((member, index) => (
               <Card key={index} className="text-center">
-                <CardContent className="p-6">
+                <CardContent className="p-4">
                   <Image
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}

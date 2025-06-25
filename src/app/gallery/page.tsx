@@ -73,21 +73,26 @@ export default function GalleryPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Gallery</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Explore our collection of stunning interior design and architectural projects that showcase our expertise
-              and creativity.
-            </p>
-          </div>
+      <section className="relative min-h-[420px] md:min-h-[520px] flex items-center justify-center mb-8 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1600&q=80"
+          alt="Gallery Hero Background"
+          fill
+          className="object-cover object-center absolute inset-0 w-full h-full z-0"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="relative z-20 w-full flex flex-col items-center justify-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white text-center drop-shadow-lg">Gallery</h1>
+          <p className="mt-6 max-w-2xl text-lg md:text-2xl leading-8 text-white/90 text-center drop-shadow">
+            Explore our collection of stunning interior design and architectural projects that showcase our expertise and creativity.
+          </p>
         </div>
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-12 border-b">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="py-8 border-b mt-0">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="flex justify-center">
             <div className="flex flex-wrap justify-center gap-2 rounded-xl bg-white border border-gray-200 p-2 shadow-sm relative">
               {categories.map((category) => (
@@ -115,8 +120,8 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredImages.map((image, index) => (
               <div
