@@ -1,3 +1,4 @@
+import './globals.css'
 import Hero from "@/src/components/hero"
 import ServicesPreview from "@/src/components/services-preview"
 import ProjectsPreview from "@/src/components/projects-preview"
